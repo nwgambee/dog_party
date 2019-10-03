@@ -14,25 +14,24 @@ nav {
   background-color: #75e2e6;
   border-bottom: 4px solid #048eaa;
   height: 75px;
-  position: relative;
-  /* border: 3px solid red; */
 }
 
 #dog_icon {
+  display: inline-block;
   height: 55px;
+  width: 55px;
   margin-top: 10px;
-  left: 0.5%;
-  bottom: 15%;
-  position: absolute;
+  margin-left: 10px;
 }
 
 .navbar_links {
   color: black;
+  /* display: inline; */
   font-weight: bold;
   padding: 5px 10px;
-  text-align: right;
   text-decoration: none;
   margin: 0;
+  float: right;
 }
 
 ul {
@@ -44,8 +43,6 @@ ul {
 li {
   display: inline;
 }
-
-
 
 .title_section {
   background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(./park.jpg);
@@ -68,6 +65,10 @@ h1 {
 
 strong {
   font-weight: bolder;
+}
+
+h2 {
+
 }
 
 .dog_images {
@@ -124,7 +125,7 @@ h3 {
 .middle,
 .right {
   display: inline-block; /* so I can set height and width on element */
-  height: 500px;
+  height: 50%;
   margin-bottom: 25px;
   text-align: center;
   width: 33%;
@@ -139,7 +140,7 @@ p {
   width: auto;
 }
 
-button {
+.buttons {
   background-color: #048eaa;
   border-radius: 3px;
   color: #ffffff;
@@ -162,6 +163,7 @@ footer {
 
 }
 
-#footer_icons {
+.social_media_icons {
+  padding: 10px;
 /* need to space out each icon from the others somehow */
 }
