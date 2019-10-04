@@ -7,30 +7,30 @@ function changeDogName() {
 
 document.getElementById("left_button").addEventListener("click", hideLeftContent);
 function hideLeftContent() {
-  var x = document.getElementById("left_para");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hideLeft = document.getElementById("left_para");
+  if (hideLeft.style.display === "none") {
+    hideLeft.style.display = "block";
   } else {
-    x.style.display = "none";
+    hideLeft.style.display = "none";
   }
 };
 
 document.getElementById("middle_button").addEventListener("click", hideMiddleContent);
 function hideMiddleContent() {
-  var x = document.getElementById("middle_para");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hideMiddle = document.getElementById("middle_para");
+  if (hideMiddle.style.display === "none") {
+    hideMiddle.style.display = "block";
   } else {
-    x.style.display = "none";
+    hideMiddle.style.display = "none";
   }
 };
 
 document.getElementById("right_button").addEventListener("click", hideRightContent);
 function hideRightContent() {
-  var x = document.getElementById("right_para");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hideRight = document.getElementById("right_para");
+  if (hideRight.style.display === "none") {
+    hideRight.style.display = "block";
   } else {
-    x.style.display = "none";
+    hideRight.style.display = "none";
   }
 };
