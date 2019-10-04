@@ -1,11 +1,30 @@
-document.getElementById("submit").addEventListener("click", changeDogName);
-function changeDogName() {
-  var newDogName = document.getElementById("name").value;
-  document.getElementById("change_this_name").innerHTML = newDogName;
-  event.preventDefault();
-};
+// submit button functionality:
 
-document.getElementById("left_button").addEventListener("click", hideLeftContent);
+document.getElementById("submit").addEventListener("click", function() {
+  document.getElementById("change_this_name").innerHTML = document.getElementById("name").value;
+  event.preventDefault();
+});
+
+// document.getElementById("submit").addEventListener("click", changeDogName);
+// function changeDogName() {
+//   var newDogName = document.getElementById("name").value;
+//   document.getElementById("change_this_name").innerHTML = newDogName;
+//   event.preventDefault();
+// };
+
+// var submitButton = document.getElementById("submit");
+// var defaultText = document.getElementById("change_this_name");
+// var newDogName = document.getElementById("name");
+//
+// submitButton.addEventListener('click', function() {
+//   defaultText.innerHTML = newDogName.value;
+//   event.preventDefault();
+// });
+
+
+// hide columns:
+
+document.getElementById('left_button').addEventListener("click", hideLeftContent);
 function hideLeftContent() {
   var hideLeft = document.getElementById("left_para");
   if (hideLeft.style.display === "none") {
