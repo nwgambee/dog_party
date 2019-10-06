@@ -1,14 +1,9 @@
-/* *,
-*:after,
-*:before {
-  box-sizing: border-box;
-} */
-
-
-body{
+body {
   font-family: "Open Sans";
   border: 3px solid black;
 }
+
+/* Navigation bar and icons */
 
 nav {
   background-color: #75e2e6;
@@ -16,7 +11,7 @@ nav {
   height: 75px;
 }
 
-#dog_icon {
+#dog-icon {
   display: inline-block;
   height: 55px;
   width: 55px;
@@ -24,9 +19,8 @@ nav {
   margin-left: 10px;
 }
 
-.navbar_links {
+.navbar-links {
   color: black;
-  /* display: inline; */
   font-weight: bold;
   padding: 5px 10px;
   text-decoration: none;
@@ -44,13 +38,14 @@ li {
   display: inline;
 }
 
-.title_section {
-  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(./images/dog-party-assets/park.jpg);
+/* Title section with change dog name form */
+
+.title-section {
+  background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ), url(./images/dog-party-assets/park.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
-
+  height: 700px;
 }
 
 h1 {
@@ -67,11 +62,7 @@ strong {
   font-weight: bolder;
 }
 
-h2 {
-
-}
-
-.dog_images {
+.dog-images {
   border-radius: 50%;
   border: 6px solid #048eaa;
   margin: 0 auto;
@@ -79,15 +70,13 @@ h2 {
   width: 190px;
 }
 
-.name_this_dog_form{
+.name-this-dog-form{
   margin: 0 auto;
   width: 430px;
-  /* border: 3px solid green; */
 }
 
 h3 {
   color: white;
-  /* border: 3px solid green; */
   margin: 0;
 }
 
@@ -95,15 +84,9 @@ h3 {
   border: 1px solid black;
   border-radius: 2px;
   height: 20px;
-  width: 410px; /* this is a band-aid, why can't I do 100% ? */
+  width: 410px;
   padding: 10px;
   font-size: 14px;
-  /* border: 3px solid red; */
-
-}
-
-input::placeholder {
-  font-family: "Open Sans";
 }
 
 #submit {
@@ -119,29 +102,26 @@ input::placeholder {
   width: 100%;
 }
 
-.main_section {
+/* Main section with 3 columns of text */
+
+.main-section {
   margin: auto;
   max-width: auto;
-  /* border: 4px solid red; */
 }
 
 .left,
 .middle,
 .right {
-  display: inline-block; /* so I can set height and width on element */
-  /* height: 50%; */
+  display: inline-block;
   margin-bottom: 25px;
   text-align: center;
   width: 33%;
   vertical-align: top;
-  /* border: 1px solid red; */
 }
 
 p {
   text-align: left;
-  /* border: 3px solid green; */
   padding: 10px;
-  /* height: 150px; */
   width: auto;
 }
 
@@ -155,8 +135,10 @@ p {
   margin-left: 8%;
   margin-top: 5%;
   padding: 10px;
-  width: 80%; /* 80% of the element it is within */
+  width: 80%;
 }
+
+/* Footer and social media icons */
 
 footer {
   color: white;
@@ -166,12 +148,8 @@ footer {
   text-align: center;
   padding: 30px;
   margin-top: 20px;
-  /* position: absolute;
-  bottom: 0; */
-
 }
 
-.social_media_icons {
+.social-media-icons {
   padding: 10px;
-/* need to space out each icon from the others somehow */
 }
